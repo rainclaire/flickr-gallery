@@ -8,7 +8,8 @@ A website to fetch photo data from flickr with different size configuration.
   - [Quick Start](#quick-start)
   - [Documentation](#documentation)
     - [Folder Structure](#folder-structure)
-  - [Demo](#show-case)
+  - [Demo](#demo)
+    - [Show Cases](#show-cases)
 
 ### Development
 
@@ -51,6 +52,7 @@ All the source code will be inside **src** directory. Inside src, there is clien
 
 
 ## Demo
+
 ### Show Cases
 ![hippo](https://i.gyazo.com/e533680c8331b7e35bc339262a71bd25.gif)
 
