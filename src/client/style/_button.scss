@@ -1,0 +1,45 @@
+button {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 5px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  &.button-blue {
+    background-color: #428bca;
+    &:hover {
+      background-color: #1f6aca;
+    }
+  }
+
+  &.button-green {
+    background-color: #6bca79;
+    &:hover {
+      background-color: #35ca68;
+    }
+  }
+
+  &.button-50 {
+    width: 70px;
+  }
+
+  &.button-gray {
+    color: black;
+    background-color: #e4e4e4;
+    &:hover {
+      background-color: #dfdfdf;
+    }
+  }
+
+  &.button-disabled {
+    opacity: .65;
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

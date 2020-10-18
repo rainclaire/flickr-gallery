@@ -1,0 +1,46 @@
+{
+  "name": "flickr-gallery",
+  "version": "1.0.0",
+  "description": "Website to pull most recent photo from flickr",
+  "main": "src/server/index.js",
+  "scripts": {
+    "build:style": "tailwind build src/client/style/_main.scss -o src/client/style/style.scss",
+    "build": "webpack --mode production",
+    "start": "npm run build && node src/server/server.js",
+    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "server": "nodemon src/server/server.js",
+    "dev": "npm run build:style && concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Yueling Qin",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.16.3",
+    "lodash": "^4.17.20",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.0.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "concurrently": "^4.0.0",
+    "css-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^1.0.0",
+    "nodemon": "^1.17.3",
+    "postcss-loader": "^4.0.4",
+    "sass": "^1.27.0",
+    "sass-loader": "^7.2.0",
+    "style-loader": "^0.23.0",
+    "tailwindcss": "^1.9.4",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
